@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container" id="blur">
+      <div class="containerA">
+        <div class="infobox">
+          <h1
+            style="font-size: 2.5vw; margin-top: 2%; color: white"
+            id="empPortal"
+          >
+            To do List
+          </h1>
+          <div class="inputbar1">
+            <input
+              type=""
+              name=""
+              id="eid"
+              class="inp"
+              placeholder="Activity"
+              style="font-size: 1.7vw"
+            />
+            <p class="alert1"></p>
+            <br />
+            <label for="duedate" id="dates1">Start Date</label>
+            <input
+              type="date"
+              name=""
+              id="name"
+              class="inp"
+              placeholder="Start Date"
+              style="font-size: 1.7vw"
+              
+            />
+            <p class="alert2"></p>
+            <br />
+            <label for="duedate" id="dates2">Due Date</label>
+            <input
+              type="date"
+              name=""
+              id="age"
+              class="inp"
+              placeholder="Due Date"
+              style="font-size: 1.7vw"
+          
+            
+            />
+            <p class="alert3"></p>
+            <br />
+            <select
+              class="inp"
+              id="select"
+              style="font-size: 1.7vw; color: gray"
+              onchange="getSelect();"
+              onclick="f1();"
+            >
+              <option value="" disabled selected style="color: gray">
+                Status
+              </option>
+              <option value="Started" class="ddl" id="gender1">Started</option>
+              <option value="InProgress" class="ddl" id="gender2">InProgress</option>
+              <option value="Completed" class="ddl" id="gender3">Completed</option>
+              <option value="Passed" class="ddl" id="gender3">Passed</option>
+            </select>
+            <br />
+            <button type="submit" class="add" onclick="addDetail();strikeThrough(this)">
+              Submit
+            </button>
+          </div>
+          <div class="inputbar2"></div>
+        </div>
+      </div>
+      <div class="containerB">
+        <h1
+          style="color: white; font-size: 3vw; text-align: center"
+          id="empRec"
+        >
+        <input type="text" placeholder="Activity" id="searchText" />
+          <input type="text" placeholder="Due date" id="searchText1" />
+          <input type="text" placeholder="Status" id="searchText2" />
+          
+          
+          <img src="moon.png" class="icon" id="moon" srcset="" onclick="dark()">
+          <img src="sun.png" class="icon" id="sun" alt="" srcset="" onclick="light()">
+        </h1>
+        <br />
+        <table class="list" id="storeList">
+          <thead>
+            <tr>
+              <th style="background-color: #000099; color: white">#</th>
+              <th style="background-color: #000099; color: white">Activity</th>
+              <th style="background-color: #000099; color: white">Start Date</th>
+              <th style="background-color: #000099; color: white">End Date</th>
+              <th
+                style="
+                  background-color: #000099;
+                  text-align: center;
+                  color: white;
+                "
+              >
+                Status
+              </th>
+              <th
+                style="
+                  background-color: #000099;
+                  text-align: left;
+                  color: white;
+                "
+              >
+              
+              <select name="id" id="dateAscDscId" onchange="sortArrayByDate();"> 
+                <option value="value" disabled selected>Sort by Due Date</option>
+                <option value="asc">Ascending</option> 
+                <option value="dsc">Descending</option> 
+            </select>
+            
+              </th>
+              
+            </tr>
+            
+          </thead>
+          <h1 id="noData"></h1>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div id="popup">
+      <div class="containerA">
+        <div class="infobox">
+          <h1 style="font-size: 2.5vw; margin-top: 2%; color: white">
+            Update Detail
+          </h1>
+          <img src="dU1a5L-flag-x-mark-clip-art-computer-icons.png" id="cross" srcset="" onclick="toggle()">
+          <div class="inputbar1">
+            <input
+              type="text"
+              name=""
+              id="eid"
+              class="inp popeid"
+              placeholder=" Employee ID"
+              style="font-size: 1.7vw"
+            />
+            <p class="popalert1"></p>
+            <br />
+
+            <input
+              type="date"
+              name=""
+              id="name"
+              class="inp popname"
+              placeholder="Employee Name"
+              style="font-size: 1.7vw"
+            />
+            <p class="popalert2"></p>
+            <br />
+            <input
+              type="date"
+              name=""
+              id="age"
+              class="inp popage"
+              placeholder="Employee Age"
+              style="font-size: 1.7vw"
+            />
+            <p class="popalert3"></p>
+            <br />
+            <select
+              class="inp popselect"
+              id="select1"
+              style="font-size: 1.7vw; color: gray"
+              onchange="getSelectPop();"
+              onclick="f2();"
+            >
+              <option value="" disabled selected style="color: gray;">Status</option>
+              <option value="Started" class="ddl" id="gender1">Started</option>
+              <option value="InProgress" class="ddl" id="gender2">InProgress</option>
+              <option value="Completed" class="ddl" id="gender3">Completed</option>
+              <option value="Passed" class="ddl" id="gender3">Passed</option>
+            </select>
+            <br />
+            <button type="submit" class="add" onclick="toggle();onEdit();strikeThrough1()">
+              Update
+            </button>
+          </div>
+          <div class="inputbar2"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

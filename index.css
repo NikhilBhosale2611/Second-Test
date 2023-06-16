@@ -1,0 +1,332 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("elliott-engelmann-DjlKxYFJlTc-unsplash.jpg");
+    background-size: cover;
+
+}
+.container{
+    display: flex;
+}
+.containerA{
+    /* background-color: aqua; */
+    height: 100vh;
+    width: 40vw;
+    position: relative;
+}
+.containerB{
+    /* background-color: red; */
+    height: 100vh;
+    width: 60vw;
+}
+.infobox{
+    background-color: black;
+    width: 80%;
+    height: 75%;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    text-align: center;
+}
+.inputbar1{
+    /* left: 1%;
+    text-align: left; */
+    top: 5%;
+}
+.inp{
+    margin-top: 2%;
+    /* margin-bottom: 9%; */
+    height: 5vh;
+    width: 25vw;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 4%;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+select{
+    width: 26.5vw !important;
+    margin-top: 3vh;
+}
+#eid{
+    margin-top: 12%;
+}
+.ddl{
+    height: 5vh;
+    width: 25vw;
+    border: black;
+}
+.add{
+  width: 26.5vw;
+  background-color: #000099;
+  color: white;
+  padding: 14px 20px;
+  margin: 10vh 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.7vw;
+}
+.add:hover {
+    background-color: #1919ff;
+  }
+  .alert1,.alert2,.alert3{
+    /* position: absolute; */
+    left: 3vw;
+    /* margin: 3vh; */
+    /* margin-right: 20vw; */
+    color: white;
+  }
+.edit {
+    width: 7vw;
+  background-color: green;
+  color: white;
+  padding: 14px 20px;
+  /* margin: 8px 0; */
+  margin-left: 1vw;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1vw;
+}
+#cross{
+  height: 2vw;
+  position: absolute;
+  right: 4vw;
+  top: 2vh;
+  cursor: pointer;
+}
+.delete{
+  width: 7vw;
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  /* margin: 8px 0; */
+  margin-left: 1vw;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1vw;
+}
+  .containerB{
+    padding: 2%;
+  }
+
+  /* ---------------------------------------------------------------------- */
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+  }
+  
+  td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    
+  }
+  
+  tr{
+    background-color: #dddddd;
+  }
+  .addsort{
+    width: 7vw;
+  background-color: black;
+  color: white;
+  padding: 8px 10px;
+  /* margin: 8px 0; */
+  margin-left: 1vw;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.5vw;
+  }
+  #searchText {
+    width: 12vw;
+    height: 2vw;
+    /* margin-left: 3vw; */
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 5px;
+    font-size: 1.5vw;
+}
+  @media only screen and (max-width: 700px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerA{
+        /* background-color: aqua; */
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+    .infobox{
+        background-color: black;
+        width: 80%;
+        height: 75%;
+        position: absolute;
+        top: 14%;
+        left: 10%;
+        text-align: center;
+    }
+    h1{
+      font-size: 8vw !important;
+      margin-top: 7vh !important;
+}
+    
+    .inp{
+      font-size: 4vw !important;
+      width: 50vw;
+    }
+    #select{
+      width: 52vw !important;
+    }
+    .containerB {
+      /* background-color: red; */
+      height: 100vh;
+      width: 100vw;
+  }
+  .add{
+    font-size: 4vw;
+    width: 50vw;
+  }
+  td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 0px;
+}
+.edit, .delete {
+  width: 13vw !important;
+  background-color: #000099;
+  height: 5vh;
+  color: white;
+  padding: 9px 3px;
+  margin: 8px 0;
+  margin-left: 1vw;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 3vw;
+  
+}
+.icon{
+  width: 30px;
+  cursor: pointer;
+  margin-left: 20vw !important;
+}
+#moon{
+  position: absolute;
+    left: 54vw;
+    /* bottom: -22vh; */
+    top: 5vh;
+
+}
+#sun{
+  position: absolute;
+    left: 54vw;
+    /* bottom: -22vh; */
+    top: 5vh;
+}
+#searchText {
+  position: absolute;
+    top: 116vh;
+    left: 24vw;
+    width: 45vw;
+    height: 5vw;
+    margin-left: 3vw;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 5px;
+    font-size: 4.5vw;
+}
+  }
+  /* -------------------------------------------------------- */
+  #blur.active{
+    filter: blur(20px);
+  }
+  #popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    /* box-shadow: 0 5px 30px rgba(0,0,0,.30); */
+    background: transparent;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  #popup.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+  }
+.icon{
+  width: 30px;
+  cursor: pointer;
+  margin-left: 2vw;
+}
+#moon{
+  position: absolute;
+    /* left: 54vw; */
+    /* bottom: -22vh; */
+    top: 6.5vh;
+    right: 5vw;
+
+}
+#sun{
+  position: absolute;
+    /* left: 54vw; */
+    /* bottom: -22vh; */
+    top: 6.5vh;
+    right: 5vw;
+}
+#dateAscDscId{
+  width: 16vw !important;
+    height: 5vh;
+    font-size: 1.2vw;
+    
+}
+#idAscDscName{
+  width: 8vw !important;
+    height: 5vh;
+    font-size: 1.2vw;
+}
+#searchText1 {
+  width: 12vw;
+  height: 2vw;
+  /* margin-left: 3vw; */
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 5px;
+  font-size: 1.5vw;
+}
+#searchText2 {
+  width: 12vw;
+  height: 2vw;
+  /* margin-left: 3vw; */
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 5px;
+  font-size: 1.5vw;
+}
+#dates1,#dates2{
+  color: white;
+  padding-right: 19vw !important;
+}
+#eid::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Inverts the color */
+}
+.remove{
+  visibility: hidden;
+  z-index: -100;
+}
